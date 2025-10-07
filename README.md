@@ -122,13 +122,13 @@ body('title')
   .trim()
   .isLength({ min: 1, max: 255 })
   .withMessage('Заголовок должен быть от 1 до 255 символов')
-  .escape(),  // ✅ XSS PROTECTION - ЭКРАНИРОВАНИЕ HTML СИМВОЛОВ
+  .escape(),  // v  XSS PROTECTION - ЭКРАНИРОВАНИЕ HTML СИМВОЛОВ
 
 body('content')
   .trim()
   .isLength({ min: 1 })
   .withMessage('Содержание обязательно')
-  .escape(),  // ✅ XSS PROTECTION - ЭКРАНИРОВАНИЕ HTML СИМВОЛОВ
+  .escape(),  // v  XSS PROTECTION - ЭКРАНИРОВАНИЕ HTML СИМВОЛОВ
   ```
 **Content Security Policy через Helmet:**
 ```javascript
@@ -218,9 +218,9 @@ body('password')
 ```
 ## Скриншоты отчетов SAST/SCA из раздела "Actions" 
 
-![Alt text](path/to/image.png)
+![Alt text](sca.png)
 
-![Alt text](path/to/image.png)
+![Alt text](sast.jpg)
 
 
 
