@@ -42,3 +42,7 @@ Thumbs.db
 # Temporary folders
 tmp/
 temp/
+# Security reports
+/reports/
+/dependency-check-report.html
+/.dependency-check/

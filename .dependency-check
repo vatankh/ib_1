@@ -1,0 +1,4 @@
+# OWASP Dependency Check Configuration
+cve.startyear=2018
+cve.validforhours=24
+analyzer.assembly.enabled=false

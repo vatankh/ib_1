@@ -4,19 +4,31 @@
   "description": "Secure REST API with JWT authentication and security best practices",
   "main": "src/app.js",
   "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "eslint src/ tests/",
-    "lint:fix": "eslint src/ tests/ --fix"
+    "lint:fix": "eslint src/ tests/ --fix",
+    "audit": "npm audit",
+    "audit:fix": "npm audit fix",
+    "db:seed": "node src/scripts/seed.js",
+    "db:reset": "node src/scripts/safe-reset.js",
+    "db:safe-reset": "node src/scripts/safe-reset.js",
+    "test:models": "node src/scripts/test-models.js"
   },
-  "keywords": ["rest-api", "security", "jwt", "authentication"],
+  "keywords": [
+    "rest-api",
+    "security",
+    "jwt",
+    "authentication"
+  ],
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "express": "^4.18.2",
     "express-validator": "^7.0.1",
     "helmet": "^7.1.0",
